@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/*INICIO*/
+.card{
+    width: 1200px;
+    height: 700px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.186);
+    border: 20px solid black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+.paginapersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.imagen-container{
+    position: relative;
+    display: inline-block;
+}
+.imagen-titulo{
+    position: absolute;
+    bottom: -530px;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    z-index: 1;
+    background: none;
+}
+.imagen-container h1{
+    font-family: 'Anton';
+    font-size: 160px;
+    font-weight: lighter;
+    margin-top: 20px;
+    z-index: 0;
+}
+.paginapersonal p{
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: 15px;
+    margin: 156px 0 0;
+    z-index: 1;
+    background: white;
+    padding: 20px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.nav-background{
+    margin-top: -36px;
+    width: 600px;
+    background-color: black;
+    padding: 0 50px 0 50px;
+    border-radius: 0 0 30px 30px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px));
+}
+nav{
+    background-color: black ;
+    padding-bottom: 4px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    gap: 30px;
+    background-color: black;
+    border-radius: 30px 30px 0 0;
+}
+nav ul li a{
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 10px;
+    font-weight: bold;
+}
+/*GUSTOS HTML*/
+.gustos-nav-background{
+    margin-top: -36px;
+    width: 800px;
+    background-color: black;
+    padding: 0 50px 0 50px;
+    border-radius: 0 0 30px 30px;
+    clip-path: polygon(
+        0 0,
+        100% 0, 100% calc(100% - 30px),
+        calc(100% - 30px) 100%,
+        30px 100%,
+        0 calc(100% - 30px));
+}
+.gustos-paginapersonal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 100px;
+}
+.gustos-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 200px;
+    font-weight: lighter;
+    margin-top: -160px;
+    z-index: 0;
+    background: transparent;
+}
+.gustos-paginapersonal p{
+    font-weight: bold;
+    font-size: 13px;
+   
+    margin-bottom: -90px;
+    z-index: 1;
+    background: white;
+    padding: 30px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+.gustos-imagen-container{
+    position:absolute;
+    margin-left: -400px;
+}
+.gustos-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    z-index: 1;
+    background: none;
+    bottom: -588px;
+    width: 600px;
+    z-index: 1;
+    background: none;
+}
+/*HOBBIES HTML*/
+.hobbieslist{
+    font-weight: bold;
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: -20px;
+    z-index: 1;
+    background: white;
+    padding: 30px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 450px;
+}
+.btn-volver{
+    margin-right: -920px;
+    margin-bottom: 30px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 20px;
+    font-weight: bold;
+    clip-path: polygon(
+        20px 2px,               
+        100% 2px,                
+        100% calc(100% - 20px),  
+        calc(100% - 20px) 100%,  
+        2px 100%,               
+        2px 20px                
+    );
+}
+.hbs-imagen-container{
+    position:absolute;
+    margin-left: -400px;
+}
+.hbs-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -684px;
+    left: 35px;
+    width: 720px;
+    z-index: 1;
+    background: none;
+}
+/*INFO GENERAL HTML*/
+.info-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 120px;
+    font-weight: lighter;
+    margin-top: -120px;
+    z-index: 0;
+    background: transparent;
+}
+.info-paginapersonal p{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: -90px;
+    z-index: 1;
+    background: white;
+    padding: 30px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 320px;
+}
+.info-imagen-container{
+    position:absolute;
+    margin-left: 560px;
+
+}
+.info-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -708px;
+    left: 35px;
+    width: 600px;
+    z-index: 1;
+    background: none;
+}
+/*GUSTOS MUSICALES HTML*/
+.musica-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 120px;
+    font-weight: lighter;
+    margin-top: 0px;
+    z-index: 0;
+    background: transparent;
+    margin-left: -60px;
+}
+.musica-imagen-container{
+    position:absolute;
+    margin-left: 560px;
+}
+.musica-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -693px;
+    left: 195px;
+    width: 500px;
+    z-index: 1;
+    background: none;
+    border-radius: 30px;
+}
+.generos{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    margin-top: 0px;
+    left: -60px;
+    flex-wrap: wrap;
+    background: white;
+}
+.gcard{
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0cqh 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.gcard h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.gcard img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.155);
+}
+.gcard p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+.gcard ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+}
+.musica-btn-volver{
+    margin-right: 920px;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: 79px;
+    clip-path: polygon(
+        20px 2px,               
+        100% 2px,                
+        100% calc(100% - 20px),  
+        calc(100% - 20px) 100%,  
+        2px 100%,               
+        2px 20px                
+    );
+}
+/*GUSTOS CULTURALES HTML*/
+.c-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 120px;
+    font-weight: lighter;
+    margin-top: -20px;
+    z-index: 0;
+    background: transparent;
+}
+.c-imagen-container{
+    position:absolute;
+    margin-left: 560px;
+
+}
+.c-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -630px;
+    left: -425px;
+    width: 380px;
+    z-index: 1;
+    background: none;
+    border-radius: 30px;
+}
+.gcu{
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    margin-top: 0px;
+    flex-direction: row;
+    right: 160px;
+}
+.cgcard{
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 330px;
+    height: 330px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.cgcard h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cgcard img{
+    width: auto%;
+    height: 33%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.cgcard p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.cgcard ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+/*FAMILIA HTML*/
+.f-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 120px;
+    font-weight: lighter;
+    margin-top: -20px;
+    z-index: 0;
+    background: transparent;
+    margin-left: -60px;
+}
+.f-imagen-container{
+    position:absolute;
+    margin-left: 560px;
+
+}
+.f-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -665px;
+    left: 105px;
+    width: 650px;
+    z-index: 1;
+    background: none;
+}
+.fgeneros{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+    margin-top: 10px;
+    left: -60px;
+    flex-wrap: wrap;
+    background: white;
+}
+.fgcard{
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0cqh 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.fgcard h3 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.fgcard img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.155);
+}
+.fgcard p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+.fgcard ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+}
+.f-btn-volver{
+    margin-right: 920px;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: 79px;
+    clip-path: polygon(
+        20px 2px,               
+        100% 2px,                
+        100% calc(100% - 20px),  
+        calc(100% - 20px) 100%,  
+        2px 100%,               
+        2px 20px                
+    );
+}
+/*AMIGOS HTML*/
+.am-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 120px;
+    font-weight: lighter;
+    margin-top: 0px;
+    z-index: 0;
+    background: transparent;
+    margin-left: 0px;
+}
+.am-imagen-container{
+    position:absolute;
+    margin-left: 560px;
+}
+.am-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -608px;
+    left: 89px;
+    width: 900px;
+    z-index: 1;
+    background: none;
+    border-bottom-right-radius: 60px;
+}
+.amgeneros{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    background: white;
+}
+.amgcard{
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0cqh 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.amgcard h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.amgcard img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.155);
+}
+.amgcard p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+.amgcard ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+}
+.f-btn-volver{
+    margin-right: 920px;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 20px;
+    font-weight: bold;
+    margin-left: 79px;
+    clip-path: polygon(
+        20px 2px,               
+        100% 2px,                
+        100% calc(100% - 20px),  
+        calc(100% - 20px) 100%,  
+        2px 100%,               
+        2px 20px                
+    );
+}
+/*MASCOTA*/
+.mas-paginapersonal h1{
+    font-family: 'Anton';
+    font-size: 130px;
+    font-weight: lighter;
+    z-index: 0;
+    margin-left: -250px;
+    margin-top: -20px;
+    background: transparent;
+}
+.mas-imagen-container{
+    position:absolute;
+    margin-left: 458px;
+}
+.mas-imagen-titulo{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: none;
+    bottom: -680px;
+    left: 57px;
+    width: 480px;
+    z-index: 1;
+    background: none;
+}
+.mascard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 600px;
+    height: 350px;
+    margin-left: -250px;
+}
+  .mascard img{
+    width: auto;
+    max-width: 200%;
+    background: none;
+}
+.mascard img:nth-child(1){
+    height: 250px;
+    margin-top: 0px;
+}
+.mascard img:nth-child(2){
+    height: 330px;
+    margin-left: 130px;
+    z-index: 1;
+}
+.mascard img:nth-child(3){
+    height: 250px;
+    margin-top: -240px;
+    margin-left: 40px;
+    z-index: 1;
+}
+.mascard img:nth-child(4){
+    height: 300px;
+    margin-top: -320px;
+    margin-left: -90px;
+}
+  
+.mas-paginapersonal p {
+    font-family: 'Anton';
+    grid-column: 1 / -1;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    margin-right: -250px;
+    margin-top: 10px;
+    position: absolute;
+    background: none;
+}
+.mas-btn-volver{
+    margin-right: 800px;
+    margin-bottom: 10px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 20px;
+    margin-left: -100px;
+    font-weight: bold;
+    clip-path: polygon(
+        20px 2px,               
+        100% 2px,                
+        100% calc(100% - 20px),  
+        calc(100% - 20px) 100%,  
+        2px 100%,               
+        2px 20px                
+    );
+}
